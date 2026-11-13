@@ -41,9 +41,16 @@ nav, p, section, article {
   padding: 8px;
 }
 
-.socialmedia a,
-.redes-sociais a,
-nav a,
+.socialmedia a {
+  text-decoration: none;
+  color: var(--cor-destaque2);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-destaque2);
+}
+
 footer a {
   text-decoration: none;
   color: var(--cor-destaque2);
