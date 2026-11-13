@@ -41,9 +41,14 @@ nav, p, section, article {
   padding: 8px;
 }
 
-.socialmedia a {
+.redes-sociais a {
   text-decoration: none;
   color: var(--cor-destaque2);
+}
+
+.redes-sociais img {
+  width: 32px;
+  height: auto;
 }
 
 nav a {
@@ -103,4 +108,3 @@ footer a {
   border: 2px solid var(--cor-destaque2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
