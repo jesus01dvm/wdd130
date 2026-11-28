@@ -227,3 +227,228 @@ footer nav.redes-sociais {
   height: auto;
   display: block;
 }
+
+/* =========================================
+   ESTILOS DA PÁGINA FALE CONOSCO (contato.html)
+   ========================================= */
+
+.dados-empresa {
+  text-align: center;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.dados-empresa h1 {
+  margin-bottom: 6px;
+  font-size: 1.8rem;
+}
+
+.dados-empresa p {
+  margin: 2px 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: var(--cor-destaque1);
+}
+
+.contato-principal {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+
+.mapa {
+  position: relative;
+  min-height: 360px;
+}
+
+.mapa iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--cor-destaque2);
+  display: block;
+}
+
+.formulario-contato {
+  margin: 0;
+  padding: 0;
+}
+
+.formulario-contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linha-form {
+  display: grid;
+  grid-template-columns: 115px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.linha-form > label,
+.label-grupo,
+.campo-mensagem label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--cor-destaque1);
+}
+
+.opcoes-radio {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.opcoes-radio label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.campo-mensagem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formulario-contato input[type="text"],
+.formulario-contato input[type="email"],
+.formulario-contato textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1.5px solid var(--cor-destaque2);
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: var(--cor-destaque1);
+  font-family: var(--fonte-body);
+  font-size: 0.9rem;
+}
+
+.checkbox-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+}
+
+.btn-enviar {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-destaque1);
+  font-family: var(--fonte-body);
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: 1.5px solid var(--cor-destaque2);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-enviar:hover {
+  background-color: var(--cor-destaque1);
+  color: var(--cor-primaria);
+}
+
+.equipe {
+  margin: 0 0 24px 0;
+  padding: 16px 24px 20px 24px;
+  background-color: var(--cor-secundaria);
+  border: 1.5px solid var(--cor-destaque2);
+  text-align: center;
+}
+
+.equipe h2 {
+  margin: 0 0 18px 0;
+  font-size: 1.4rem;
+}
+
+.perfis-equipe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+
+.perfis-equipe figure {
+  margin: 0;
+  width: 100%;
+  max-width: 190px;
+}
+
+.perfis-equipe img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border: 1px solid var(--cor-destaque2);
+  display: block;
+}
+
+.perfis-equipe figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--cor-destaque1);
+}
+
+/* =========================================
+   ESTILOS MAPS E FORMULARIO
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+.mapa iframe {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-contato {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1.5px solid var(--cor-destaque2);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-contato input[type="text"]:focus,
+.formulario-contato input[type="email"]:focus,
+.formulario-contato textarea:focus {
+  outline: none;
+  border-color: var(--cor-destaque1);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+.formulario-contato textarea {
+  resize: vertical;
+}
+
+.linha-form.alinhar-topo {
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .contato-principal {
+    grid-template-columns: 1fr;
+  }
+
+  .linha-form {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .perfis-equipe {
+    grid-template-columns: 1fr;
+  }
+}

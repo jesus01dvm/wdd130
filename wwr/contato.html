@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Oar & Flow</title>
+    <meta name="description"
+      content="Entre em contato com a Oar & Flow para reservas de passeios de rafting, dúvidas gerais, localização da nossa base ou sugestões.">
+    <meta name="author" content="Jesus Villasmil">
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Oar & Flow Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="dados-empresa">
+            <h1>Oar & Flow Rafting Co.</h1>
+            <p>Estrada das Corredeiras, Km 12 - Cascavel, PR</p>
+            <p>+55 (45) 8806-7133 / (45) 99988-7766</p>
+            <p>contato@oareflow.com.br</p>
+        </section>
+
+
+        <section class="contato-principal">
+            <div class="mapa">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d33963.07867034385!2d-53.47744226900419!3d-24.962602233584143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbr!4v1795870487465!5m2!1ses!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            </div>
+
+            <div class="formulario-contato">
+                <form action="#" method="post">
+                    <div class="campo-form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite aqui" required>
+                    </div>
+
+                    <div class="campo-form">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite aqui"
+                          required>
+                    </div>
+
+                    <fieldset class="campo-form">
+                        <legend>Propósito da Mensagem:</legend>
+                        <div>
+                            <input type="radio" id="geral" name="finalidade" value="Dúvida Geral"
+                              required>
+                            <label for="geral">Dúvida Geral</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reserva" name="finalidade"
+                              value="Pergunta sobre Reserva">
+                            <label for="reserva">Pergunta sobre Reserva</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="sugestao" name="finalidade" value="Sugestão">
+                            <label for="sugestao">Sugestão</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="campo-form">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite aqui"
+                          required></textarea>
+                    </div>
+
+                    <div class="campo-form checkbox-form">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                        <label for="newsletter">Por favor, me inscreva na newsletter mensal</label>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Entrar em Contato!</button>
+                </form>
+            </div>
+        </section>
+
+
+        <section class="equipe">
+            <h2>Estamos Aqui para Serví-lo</h2>
+            <div class="perfis-equipe">
+                <figure>
+                    <img src="imagens/carlos-mendes.jpg" alt="Carlos Mendes, Guia Líder de Rafting">
+                    <figcaption>Carlos Mendes — Guia Líder de Rafting</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/mariana-costa.jpg"
+                      alt="Mariana Costa, Coordenadora de Reservas">
+                    <figcaption>Mariana Costa — Coordenadora de Reservas</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/rafael-souza.jpg"
+                      alt="Rafael Souza, Especialista em Segurança">
+                    <figcaption>Rafael Souza — Especialista em Segurança</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Oar & Flow | Jesus Villasmil</p>
+        <nav class="redes-sociais">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/facebook.svg" alt="Ícone do Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/linkedin.svg" alt="Ícone do LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/instagram.svg" alt="Ícone do Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
